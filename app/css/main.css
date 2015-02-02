@@ -1,0 +1,230 @@
+/* =========================================================
+ * Top Nav styles - http://twbscolor.smarchal.com/
+ * ========================================================= */
+
+/*.navbar-default {
+  background-color: #f6f6f6;
+  border-color: #9df1f6;
+}
+.navbar-default .navbar-brand {
+  color: #4f95dd;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #0f266e;
+}
+.navbar-default .navbar-text {
+  color: #4f95dd;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #4f95dd;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #0f266e;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #0f266e;
+  background-color: #9df1f6;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #0f266e;
+  background-color: #9df1f6;
+}
+.navbar-default .navbar-toggle {
+  border-color: #9df1f6;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #9df1f6;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #4f95dd;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #4f95dd;
+}
+.navbar-default .navbar-link {
+  color: #4f95dd;
+}
+.navbar-default .navbar-link:hover {
+  color: #0f266e;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #4f95dd;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #0f266e;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #0f266e;
+    background-color: #9df1f6;
+  }
+}*/
+
+
+
+
+
+
+
+
+/* =========================================================
+ * Baseline Styles
+ * ========================================================= */
+
+body {
+  width: 100%;
+  height: 800px;
+  line-height: 1.33;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.clear {
+  clear: both;
+}
+
+/*.custom-navbar-top {
+  -webkit-box-shadow: 0px 18px 49px -21px rgba(92,86,92,0.57);
+  -moz-box-shadow: 0px 18px 49px -21px rgba(92,86,92,0.57);
+  box-shadow: 0px 18px 49px -21px rgba(92,86,92,0.57);
+}
+
+.custom-navbar-bottom {
+  -webkit-box-shadow: 18px 0px 49px -21px rgba(92,86,92,0.57);
+  -moz-box-shadow: 18px 0px 49px -21px rgba(92,86,92,0.57);
+  box-shadow: 18px 0px 49px -21px rgba(92,86,92,0.57);
+}*/
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+
+.planner-row {
+  height: auto;
+  width: 100%;
+  text-align: left;
+  overflow: auto;
+  position: relative;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.planner-row > div {
+  height: 50px;
+  display: block;
+  float: left;
+  width: 100%;
+  border-bottom: 2px dotted white;
+}
+
+.section1, .section2, .section3, .section4, .section5 {
+  width: 20%;
+  float: left;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+/*.section1, .section3, .section5 {
+  border: 1px dotted grey;
+}*/
+
+.planner-row > :nth-child(odd) {
+  background: #C2E9ED;
+}
+
+.planner-row > :nth-child(even) {
+  background: #8FE1EB;
+}
+
+.planner-row > :first-child {
+  border-radius: 3px 3px 0px 0px;
+}
+
+.planner-row > :last-child {
+  border-radius: 0px 0px 3px 3px;
+  border-bottom: 0px dotted white;
+}
+
+img {
+  width: 44px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  margin: 0 auto;
+  padding-top: 2px;
+}
+
+.navbar-nav img{
+  width: 30px;
+}
+
+/* =========================================================
+ * Add medication
+ * ========================================================= */
+
+.add-medication{
+  width: 30%;
+  margin: 20px 35%;
+  height: 200px;
+  text-align: center;
+  background: grey;
+}
+
+.description {
+  width: 40%;
+  margin: 0 30%;
+  padding: 50px;
+  text-align: center;
+}
+
+.duration {
+  width: 30%;
+  margin: 10px 35%;
+  padding: 10px;
+  text-align: center;
+  float: left;
+}
+
+/* =========================================================
+ * Media queries
+ * ========================================================= */
+
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 65px;
+  }
+
+  .navbar-brand {
+    padding-top: 6px;
+  }
+
+}
+
+.form-group {
+
+}
+
+/*.form-control {
+  width: 65%;
+  display: inline-block;
+  margin: 0;
+  float: left;
+}
+
+.btn {
+  width: 25%;
+  display: inline-block;
+  margin: 0;
+}*/
