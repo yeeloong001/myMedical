@@ -79,6 +79,7 @@ body {
   line-height: 1.33;
   padding-top: 65px;
   padding-bottom: 65px;
+  color: #40B0BD;
 }
 
 .clear {
@@ -170,7 +171,7 @@ img {
   padding-top: 2px;
 }
 
-.navbar-nav img{
+.navbar-nav img {
   width: 30px;
 }
 
@@ -178,13 +179,19 @@ img {
  * Add medication
  * ========================================================= */
 
-.add-medication{
+.add-medication {
   width: 30%;
   margin: 20px 35%;
   height: 200px;
   text-align: center;
-  background: grey;
+  /*background: grey;*/
+  overflow: hidden;
 }
+
+  .pill-img img {
+    width: 200px;
+    padding: 10px;
+  }
 
 .description {
   width: 40%;
