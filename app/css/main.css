@@ -122,7 +122,7 @@ body {
   display: block;
   float: left;
   width: 100%;
-  border-bottom: 2px dotted white;
+  border-bottom: 1.5px dotted white;
 }
 
 .section1, .section2, .section3, .section4, .section5 {
