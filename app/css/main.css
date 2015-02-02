@@ -133,6 +133,11 @@ body {
   text-align: center;
 }
 
+  /* Pill icons in schedule resized */
+  .section1 img, .section2 img, .section3 img, .section4 img , .section5 img {
+    width: 30px;
+  }
+
 /*.section1, .section3, .section5 {
   border: 1px dotted grey;
 }*/
