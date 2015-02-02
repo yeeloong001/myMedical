@@ -184,21 +184,26 @@ img {
   margin: 20px 35%;
   height: 200px;
   text-align: center;
-  /*background: grey;*/
+  background: grey;
   overflow: hidden;
 }
 
   .pill-img img {
     width: 200px;
     padding: 10px;
-    /*float: left;*/
   }
 
 /*  .left-arrow {
+    border: 1px solid orange;
+    display: inline-block;
+    vertical-align: middle;
     float: left;
   }
 
   .right-arrow {
+    border: 1px solid orange;
+    display: inline-block;
+    vertical-align: middle;
     float: left;
   }*/
 

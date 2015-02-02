@@ -2554,14 +2554,18 @@ output {
 }
 .form-control::-moz-placeholder {
   /*color: #999;*/
-  color: orange;
-  opacity: 1;
+  color: #40B0BD;
+  opacity: .5;
 }
 .form-control:-ms-input-placeholder {
-  color: #999;
+  /*color: #999;*/
+  color: #40B0BD;
+  opacity: .5;
 }
 .form-control::-webkit-input-placeholder {
-  color: #999;
+  /*color: #999;*/
+  color: #40B0BD;
+  opacity: .5;
 }
 .form-control[disabled],
 .form-control[readonly],
