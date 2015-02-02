@@ -191,7 +191,16 @@ img {
   .pill-img img {
     width: 200px;
     padding: 10px;
+    /*float: left;*/
   }
+
+/*  .left-arrow {
+    float: left;
+  }
+
+  .right-arrow {
+    float: left;
+  }*/
 
 .description {
   width: 40%;
@@ -228,7 +237,7 @@ img {
 
 }
 
-/*.form-control {
+.form-control {
   width: 65%;
   display: inline-block;
   margin: 0;
@@ -236,7 +245,8 @@ img {
 }
 
 .btn {
-  width: 25%;
+/*  width: 25%;
   display: inline-block;
-  margin: 0;
-}*/
+  margin: 0;*/
+  color: white;
+}

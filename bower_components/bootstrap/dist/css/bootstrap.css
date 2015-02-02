@@ -2535,7 +2535,8 @@ output {
   font-size: 14px;
   line-height: 1.42857143;
   color: #555;
-  background-color: #fff;
+  /*background-color: #fff;*/
+  background-color: white;
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -2552,7 +2553,8 @@ output {
           box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 .form-control::-moz-placeholder {
-  color: #999;
+  /*color: #999;*/
+  color: orange;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
@@ -3020,8 +3022,9 @@ fieldset[disabled] .btn {
 }
 .btn-default {
   color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+  /*background-color: #fff;*/
+  background-color: #40B0BD;
+  /*border-color: #ccc;*/
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -3029,9 +3032,11 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  /*color: #333;*/
+  color: white;
+  /*background-color: #e6e6e6;*/
+  background-color: #305F65;
+  /*border-color: #adadad;*/
 }
 .btn-default:active,
 .btn-default.active,
