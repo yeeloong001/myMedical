@@ -189,26 +189,34 @@ img {
   margin: 20px 35%;
   height: 200px;
   text-align: center;
-  background: grey;
+  /*background: grey;*/
   overflow: hidden;
 }
 
+.pill-img {
+  padding: 3em 0;
+  display: inline-block;
+}
+
   .pill-img img {
-    width: 200px;
+    width: 110px;
     padding: 10px;
     display: inline-block;
     float: left;
+    /*border: 1px solid orange;*/
   }
 
-  .left-arrow {
-    display: inline-block;
-    float: left;
-  }
+.left-arrow {
+  display: inline-block;
+  float: left;
+  /*border: 1px solid orange;*/
+}
 
-  .right-arrow {
-    display: inline-block;
-    float: left;
-  }
+.right-arrow {
+  display: inline-block;
+  float: left;
+  /*border: 1px solid orange;*/
+}
 
 .description {
   width: 40%;
