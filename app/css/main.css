@@ -83,7 +83,7 @@ body {
 }
 
 .view {
-  margin-bottom: 6em
+  margin-bottom: 6em;
 }
 
 .clear {
@@ -257,6 +257,10 @@ img {
   body {
     padding-top: 65px;
   }
+
+    .view {
+      margin-top: 5em;
+    }
 
   .navbar-brand {
     padding-top: 6px;
