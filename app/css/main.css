@@ -82,6 +82,10 @@ body {
   color: #40B0BD;
 }
 
+.view {
+  margin-bottom: 6em
+}
+
 .clear {
   clear: both;
 }
@@ -192,26 +196,24 @@ img {
   .pill-img img {
     width: 200px;
     padding: 10px;
+    display: inline-block;
+    float: left;
   }
 
-/*  .left-arrow {
-    border: 1px solid orange;
+  .left-arrow {
     display: inline-block;
-    vertical-align: middle;
     float: left;
   }
 
   .right-arrow {
-    border: 1px solid orange;
     display: inline-block;
-    vertical-align: middle;
     float: left;
-  }*/
+  }
 
 .description {
   width: 40%;
   margin: 0 30%;
-  padding: 50px;
+  padding: 30px;
   text-align: center;
 }
 
