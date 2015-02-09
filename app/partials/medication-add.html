@@ -1,0 +1,77 @@
+<div class="container-fluid">
+
+  <!-- top navbar start -->
+     <nav class="menu-bar">
+        
+      <div class="menu-back col-sm-2">
+        <!-- <a ng-href="#/medication-home">
+          <img alt="back" ng-src="img/icon_back.png">
+        </a> -->
+      </div>
+
+      <div class="menu-welcome col-sm-8">
+        <h1 ng-repeat="ailment in ailments | filter:query.cure | limitTo: 1">{{ailment.cure | uppercase}}</h1>
+      </div>
+          
+      <div class="menu-home col-sm-2">
+        <a ng-href="#/home">
+          <img alt="home" ng-src="img/icon_home.png">
+        </a>
+      </div>
+
+    </nav>
+    <!-- top navbar end -->
+
+  <div class="medication-home medication-add">
+
+    <div class="thumbnails">
+      <div class="cure">
+        <div class="thumbnail-wrapper wrapper-adjust2">
+          <img alt="illness" ng-src="img/icon_greenpill.png">
+        </div>
+        <p ng-repeat="ailment in ailments | filter:query.cure | limitTo: 1">{{ailment.cure | uppercase}}</p>
+      </div>
+      <div class="intake">
+        <div class="thumbnail-wrapper wrapper-adjust2">
+          <img alt="intake" ng-src="img/icon_maxintake.png">
+        </div>
+        <p ng-repeat="ailment in ailments | filter:query.cure | limitTo: 1">{{ailment.maxDaily | uppercase}}</p>
+      </div>
+      <div class="direction">
+        <div class="thumbnail-wrapper wrapper-adjust2">
+          <img alt="direction" ng-src="img/icon_greenbeforeafter.png">
+        </div>
+        <p ng-repeat="ailment in ailments | filter:query.cure | limitTo: 1">{{ailment.direction | uppercase}}</p>
+      </div>
+      <div class="allergies">
+        <div class="thumbnail-wrapper">
+          <img alt="allergies" ng-src="img/icon_allergies.png">
+        </div>
+        <p ng-repeat="user in users | limitTo: 1">{{user.allergy | uppercase}}</p>
+      </div>
+    </div>
+
+    <div class="day add1">
+      <h4>{{dt | date:'dd'}}</h4>
+      <h3>{{dt | date:'EEEE' | uppercase}}</h3>
+    </div>
+
+  </div>
+
+  <form role="form" ng-submit="addTodo()">
+      <div class="input-group input-group-override2 input-group-override3">
+            <span class="input-group-btn">
+                  <a ng-href="#/home"><input type="submit" class="btn btn-primary" value="ADD"></a>
+            </span>
+      </div>
+  <form>
+
+  <form role="form" ng-submit="addTodo()">
+      <div class="input-group input-group-override2 input-group-override4">
+            <span class="input-group-btn">
+                  <a ng-href="#/doc-notes"><input type="submit" class="btn btn-primary" value="DOC NOTES"></a>
+            </span>
+      </div>
+  <form>
+
+</div>

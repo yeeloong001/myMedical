@@ -1,294 +1,442 @@
-/* =========================================================
- * Top Nav styles - http://twbscolor.smarchal.com/
- * ========================================================= */
+/*
+ *
+ * Top Nav styles - http://twbscolor.smarchal.com/ 
+ *
+ */
 
-/*.navbar-default {
-  background-color: #f6f6f6;
-  border-color: #9df1f6;
-}
-.navbar-default .navbar-brand {
-  color: #4f95dd;
-}
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #0f266e;
-}
-.navbar-default .navbar-text {
-  color: #4f95dd;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #4f95dd;
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #0f266e;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #0f266e;
-  background-color: #9df1f6;
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #0f266e;
-  background-color: #9df1f6;
-}
-.navbar-default .navbar-toggle {
-  border-color: #9df1f6;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #9df1f6;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #4f95dd;
-}
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #4f95dd;
-}
-.navbar-default .navbar-link {
-  color: #4f95dd;
-}
-.navbar-default .navbar-link:hover {
-  color: #0f266e;
-}
-
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #4f95dd;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #0f266e;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #0f266e;
-    background-color: #9df1f6;
-  }
-}*/
-
-
-
-
-
-
-
-
-/* =========================================================
+/*
+ * 
  * Baseline Styles
- * ========================================================= */
+ *
+ */
 
-body {
-  width: 100%;
-  height: 800px;
+html, body {
+  font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+  font-weight: 300;
+  font-size: 13px;
   line-height: 1.33;
-  padding-top: 65px;
-  padding-bottom: 65px;
-  color: #40B0BD;
+  color: #D4EBFA;
+  background-color: #ffffff;
 }
 
-.view {
-  margin-bottom: 6em;
-}
-
-.clear {
-  clear: both;
-}
-
-/*.custom-navbar-top {
-  -webkit-box-shadow: 0px 18px 49px -21px rgba(92,86,92,0.57);
-  -moz-box-shadow: 0px 18px 49px -21px rgba(92,86,92,0.57);
-  box-shadow: 0px 18px 49px -21px rgba(92,86,92,0.57);
-}
-
-.custom-navbar-bottom {
-  -webkit-box-shadow: 18px 0px 49px -21px rgba(92,86,92,0.57);
-  -moz-box-shadow: 18px 0px 49px -21px rgba(92,86,92,0.57);
-  box-shadow: 18px 0px 49px -21px rgba(92,86,92,0.57);
-}*/
-
-.navbar-nav {
-  width: 100%;
-  text-align: center;
-}
-
-.navbar-nav > li {
-  float: none;
-  display: inline-block;
-  padding: 0 1.5em;
-}
-
-.planner-row {
-  height: auto;
-  width: 100%;
-  text-align: left;
-  overflow: auto;
-  position: relative;
-  font-size: 21px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
   font-weight: 500;
+  font-size:  24px;
+  margin: 0px;
+  padding: 0px;
+  color: #D4EBFA;
 }
 
-.planner-row > div {
-  height: 50px;
-  display: block;
-  float: left;
+.container {
+  max-width: 1000px;
   width: 100%;
-  border-bottom: 1.5px dotted white;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0px;
 }
 
-.section1, .section2, .section3, .section4, .section5 {
-  width: 20%;
-  float: left;
-  height: 50px;
-  padding: 10px;
-  text-align: center;
+a, a:visited {
+  text-decoration: none;
+  color: #000000;
 }
-
-  /* Pill icons in schedule resized */
-  .section1 img, .section2 img, .section3 img, .section4 img , .section5 img {
-    width: 30px;
+  a:hover {
+    color: #6de5f0;
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
   }
 
-/*.section1, .section3, .section5 {
-  border: 1px dotted grey;
-}*/
+/*
+ * 
+ * main
+ *
+ */
 
-.planner-row > :nth-child(odd) {
-  background: #C2E9ED;
+ .container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+ }
+
+.menu-bar {
+  height: 66px;
+  background: #72716E;
 }
 
-.planner-row > :nth-child(even) {
-  background: #8FE1EB;
+.menu-bar::after{
+  clear: both;
+  content: "";
 }
 
-.planner-row > :first-child {
-  border-radius: 3px 3px 0px 0px;
+.menu-back, .menu-home {
+  text-align: center;
+  -moz-transition:all 0.3s ease-in-out;
+  -webkit-transition:all 0.3s ease-in-out;
+  -o-transition:all 0.3s ease-in-out;
+  -ms-transition:all 0.3s ease-in-out;
+  transition:padd 0.3s ease-in-out;
 }
 
-.planner-row > :last-child {
-  border-radius: 0px 0px 3px 3px;
-  border-bottom: 0px dotted white;
+.menu-back h2, .menu-home h2 {
+  font-size: 21px;
+}
+
+.menu-back:hover{
+  padding-left: 5px;
+}
+
+.menu-home:hover{
+  -moz-transform:scale(0.9)  ;
+  -webkit-transform:scale(0.9) ;
+  -o-transform:scale(0.9)  ;
+  -ms-transform:scale(0.9) ;
+  transform:scale(0.9)  ;
+}
+
+.menu-welcome {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+h1{
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+  padding-top: 7px;
+  color: #ffffff;
 }
 
 img {
-  width: 44px;
+  width: 36px;
+  height: auto;
   margin: 0;
+  padding: 15px 0px 15px 0px;
+}
+
+/*
+ * 
+ * Home
+ *
+ */
+
+ .date {
+  height: 150px;
+ }
+
+ .day {
+  width: 30%;
+  float: left;
+  background: #ffffff;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+ }
+
+.day h4 {
+  font-size: 100px;
+  line-height: 100px;
+  color: #A5CBEB;
+  margin-top: 5px;
+ }
+
+ .day h3 {
+  color: #ffffff;
+  background: #A5CBEB;
+ }
+
+ .month {
+  float: left;
+  color: #848588;
+  background: #ffffff;
+  width: 70%;
+  text-align: right;
+ }
+
+ .month h3 {
+  font-size: 160px;
+  line-height: 110px;
+  margin-top: 21px; /* previously 40px for baseline */
+  color: #A5CBEB;
+ }
+
+ .btn {
+  width: 100%;
+  height: 125px;
+  font-size: 100px;
+  line-height: 100px;
+ }
+
+/*
+ * 
+ * medication-home
+ *
+ */
+
+.medication-home {
+  height: 484px;
+  background: #ffffff;
+ }
+
+.medication-home .day, .medication-home .month {
+  background: #ffffff;
+  /*background: black;*/
+}
+
+.thumbnails {
+  width: 75%;
+  float: left;
+}
+
+.medication-home .day {
+  width: 25%;
+}
+
+.medication-home .day h4{
+  margin-top: 4px;
+}
+
+.medication-home .month {
+  width: 100%;
+}
+
+.medication-home .month h3{
+  margin-top: 174px;
+}
+
+.thumbnail-wrapper{
+  width: 40px;
+  height: 40px;
+  /*background: #848588;*/
+  display: inline-block;
+  padding: 2px;
+  margin: 20px;
+}
+
+.cure input {
+  border-radius: 5px;
+  width: 95%;
+}
+
+.wrapper-adjust {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.thumbnails p {
+  display: inline-block;
+  font-weight: 500;
+  color: #5A4017;
+}
+
+.thumbnails img {
+  text-align: center;
   padding: 0;
 }
 
-.navbar-brand {
-  margin: 0 auto;
-  padding-top: 2px;
-}
-
-.navbar-nav img {
-  width: 30px;
-}
-
-/* =========================================================
- * Add medication
- * ========================================================= */
-
-.add-medication {
+/*.input-group-override2 .btn-img-container{
   width: 30%;
-  margin: 20px 35%;
-  height: 200px;
+  float: left;
   text-align: center;
-  /*background: grey;*/
+  height: 125px;
+  padding-top: 30px;
+  background: rgb(51, 122, 183);
+}*/
+
+.input-group-override2 .btn {
+  text-align: right;
+  font-size: 79px;
+}
+
+ /*
+ * 
+ * medication-add
+ *
+ */
+
+.wrapper-adjust2 {
+  margin-bottom: 0px;
+}
+
+.add1 h4 {
+  font-size: 100px;
+  line-height: 100px;
+  color: #91CC95;
+  margin-top: 5px;
+ }
+
+ .add1 h3 {
+  color: #ffffff;
+  background: #91CC95;
+ }
+
+/* .add2 h3 {
+  font-size: 160px;
+  line-height: 110px;
+  margin-top: 40px;
+  color: #91CC95;
+ }
+
+ .medication-add .month h3{
+  margin-top: 239px;
+  background-color: #ffffff;
+  color: #91CC95;
+}
+
+.medication-add .month h3:hover{
+  color: #00A260;
+  cursor: pointer;
+}*/
+
+.input-group-override3 .btn-primary {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #91CC95;
+}
+
+.input-group-override3 .btn-primary:hover {
+  color: #00A260;
+}
+
+.input-group-override4 .btn-primary {
+  background-color: #91CC95;
+  border-color: #91CC95;
+}
+
+.input-group-override4 .btn-primary:hover {
+  background-color: #00A260;
+  border-color: #00A260;
+}
+
+/*
+ * 
+ * doc-notes
+ *
+ */
+
+
+.note1 h4 {
+  font-size: 100px;
+  line-height: 100px;
+  color: #FFD5A1;
+  margin-top: 5px;
+ }
+
+ .note1 h3 {
+  color: #ffffff;
+  background: #FFD5A1;
+ }
+
+.input-group-override5 .btn-primary {
+  background-color: #FFD5A1;
+  border-color: #FFD5A1;
+  color: #ffffff;
+}
+
+.input-group-override5 .btn-primary:hover {
+  background-color: #FFBBA1;
+  border-color: #FFBBA1;
+}
+
+.input-group-override6 .btn-primary {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #FFD5A1;
+}
+
+.input-group-override6 .btn-primary:hover {
+  color: #FFD5A1;
+  cursor: default;
+}
+
+ /*
+ * 
+ * my Grid
+ *
+ */
+
+ @media only screen 
+and (max-width : 375px) {
+
+  .menu-back, .menu-home, .menu-welcome {
+    text-align: center;
+  }
+
+}
+
+/*
+ * 
+ * Default Grid
+ *
+ */
+
+/* * { -moz-box-sizing: border-box; box-sizing: border-box; }
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 2%;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
   overflow: hidden;
 }
 
-.pill-img {
-  padding: 3em 0;
-  display: inline-block;
+.column, .columns {
+  float: left;
+  min-height: 1px;
+  padding: 0 1%;
+}
+.row > .column:first-of-type, .row > .columns:first-of-type {
+  padding-left: 0;
+}
+.row > .column:last-of-type, .row > .columns:last-of-type {
+  padding-right: 0;
 }
 
-  .pill-img img {
-    width: 110px;
-    padding: 10px;
-    display: inline-block;
+.one { width: 8.333333333%; }
+.two { width: 16.666666666%; }
+.three { width: 25%; }
+.four { width: 33.33333333%; }
+.five { width: 41.666666667%; }
+.six { width: 50%; }
+.seven { width: 58.333333333%; }
+.eight { width: 66.666666667%; }
+.nine { width: 75%; }
+.ten { width: 83.333333333%; }
+.eleven { width: 91.666666667%; }
+.twelve { width: 100%; }
+
+img { width: 100%; height: auto; }*/
+
+@media only screen 
+and (max-width : 768px) {
+
+  .col-sm-2{
+    width: 16.666666666%;
     float: left;
-    /*border: 1px solid orange;*/
+    
   }
 
-.left-arrow {
-  display: inline-block;
-  float: left;
-  /*border: 1px solid orange;*/
-}
-
-.right-arrow {
-  display: inline-block;
-  float: left;
-  /*border: 1px solid orange;*/
-}
-
-.description {
-  width: 40%;
-  margin: 0 30%;
-  padding: 30px;
-  text-align: center;
-}
-
-.duration {
-  width: 30%;
-  margin: 10px 35%;
-  padding: 10px;
-  text-align: center;
-  float: left;
-}
-
-/* =========================================================
- * Food intake 
- * ========================================================= */
-
- .food-intake {
-  margin: 20px;
-  text-align: center;
- }
-
-  .food-intake img {
-    width: 256px;
-    height: auto;
-    border: 1px solid #ccc;
-  }
-
-/* =========================================================
- * Media queries
- * ========================================================= */
-
-@media (max-width: 768px) {
-
-  body {
-    padding-top: 65px;
-  }
-
-    .view {
-      margin-top: 5em;
-    }
-
-  .navbar-brand {
-    padding-top: 6px;
+  .col-sm-8{
+    width: 66.666666667%;
+    float: left;
   }
 
 }
 
-.form-group {
-}
+@media only screen 
+and (max-width : 375px) {
 
-  .form-group button {
-    margin-left: .5em;
+  .col-sm-1{
+    width: 50%;
   }
 
-.form-control {
-  width: 65%;
-  display: inline-block;
-  margin: 0;
-  float: left;
-}
-
-.btn {
-/*  width: 25%;
-  display: inline-block;
-  margin: 0;*/
-  color: white;
-}
-
-  .btn img {
-    width: 20px;
+  .col-sm-10{
+    width: 100%;
   }
+
+}

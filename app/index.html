@@ -1,68 +1,42 @@
-<!doctype html>
-<html class="no-js">
+<!DOCTYPE html>
+
+<html ng-app="myMedicalApp">
   <head>
-    <meta charset="utf-8">
-    <title>myMedicalApp</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width"> <!-- Disables page scaling on mobile devices -->
+    <title>mediMinder</title>
+
+    <!-- CSS -->
+    <!-- HTML5 normalize.css from http://necolas.github.com/normalize.css/ -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" /> <!-- Normalize css across browsers. Friendlier then a reset. -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+    <!-- JS -->
+    <!-- HTML5shiv.js from http://code.google.com/p/html5shiv/ -->
+    <script type="text/javascript" src="js/html5shiv.js"></script> <!-- HTML5shiv for compatibility on older IE browsers -->
   </head>
-  <body ng-app="myMedicalApp">
+  
+  <body id="home">
 
     <!-- main container start -->
-    <div class="container-fluid">
+    <div class="container-fluid"> 
 
-      <!-- top navbar start -->
-      <nav class="navbar navbar-default navbar-fixed-top custom-navbar-top">
-        
-        <div class="container-fluid">
-          
-          <div class="navbar-header col-sm-6">
-            <a class="navbar-brand" ng-href="#/my-schedule">
-              <img alt="brand" ng-src="img/logo.png">
-            </a>
-          </div>
-        
-          <form class="navbar-form navbar-right col-sm-6" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Find Medication">
-              <!-- <button type="submit" class="btn btn-default">Search</button> -->
-                <button type="submit" class="btn btn-default"><img src="./img/icon_search.png"></button>
-            </div>
-          </form>
-
-        </div>
-      
-      </nav>
-      <!-- top navbar end -->
-
-      <div ng-view="" class="view"></div>
-
-      <!-- bottom navbar start -->
-      <nav class="navbar navbar-default navbar-fixed-bottom custom-navbar-bottom" role="navigation">
-      
-        <div class="container-fluid">
-          
-          <div>
-            <ul class="nav navbar-nav col-xs-12">
-              <li class="active"><a ng-href="#/my-schedule"><img alt="brand" ng-src="img/icon_home.png"></a></li>
-              <li><a ng-href="#/add-medication"><img alt="brand" ng-src="img/icon_add.png"></a></li>
-              <li><a ng-href="#/food-intake"><img alt="brand" ng-src="img/icon_schedule.png"></a></li>
-            </ul>
-          </div>
-
-        </div>
-
-      </nav>
-      <!-- bottom navbar end -->
+      <!-- view container -->
+      <div class="view-container">
+        <div ng-view class="view-frame"></div>
+      </div>
 
     </div>
     <!-- main container end -->
 
+    <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>
@@ -72,10 +46,17 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/angular-ui-sortable/sortable.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
+    <!-- JS -->
     <script src="js/app.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/about.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/bootstrap-gh-pages/ui-bootstrap-tpls-0.12.0.min.js"></script>
     <script src="js/animations.js"></script>
+  
   </body>
 </html>

@@ -1,0 +1,66 @@
+<div class="container-fluid">
+
+      <!-- top navbar start -->
+      <nav class="menu-bar">
+        
+        <div class="menu-back col-sm-2">
+        </div>
+
+        <div class="menu-welcome col-sm-8">
+          <h1 ng-repeat="user in users | limitTo: 1">HELLO {{user.name | uppercase}}</h1>
+        </div>
+          
+        <div class="menu-home col-sm-2">
+        </div>
+
+      </nav>
+      <!-- top navbar end -->
+
+      <!-- date block start -->
+      <div class="date">
+           
+            <div class="day">
+                  <h4>{{dt | date:'dd'}}</h4>
+                  <h3>{{dt | date:'EEEE' | uppercase}}</h3>
+            </div>
+
+            <div class="month">
+                  <h3>{{dt | date:'MMM' | uppercase}}</h3>
+            </div>
+      
+      </div>
+      <!-- date block end -->
+
+      <!-- Todos input -->
+      <form role="form" ng-submit="addTodo()">
+            <div class="input-group input-group-override1">
+                  <!-- <input type="text" ng-model="todo" placeholder="Add New Medication" class="form-control"> -->
+                  <span class="input-group-btn">
+                        <a ng-href="#/medication-home"><input type="submit" class="btn btn-primary" value="+"></a>
+                  </span>
+            </div>
+
+
+            <!-- Todos list -->
+            <!-- <div ui-sortable ng-model="todos" class="container-override2">
+                  <p class="input-group cards" ng-repeat="todo in todos">
+                        <input type="text" ng-model="todo" class="form-control">
+                        <span class="input-group-btn">
+                              <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
+                        </span>
+                  </p>
+            </div> -->
+
+      </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
